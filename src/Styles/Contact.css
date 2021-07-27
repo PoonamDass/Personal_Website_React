@@ -1,0 +1,16 @@
+button{
+    margin: 2%;
+}
+
+.row1{
+    text-align: start;
+}
+
+.text-area{
+    margin-top: 2%;
+    text-align: start;
+}
+
+label{
+    font-weight: bold;
+}

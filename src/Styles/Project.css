@@ -1,0 +1,50 @@
+#flex-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 300px;
+    justify-items: center;
+    grid-gap: 5px;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+
+
+#project-image1{
+    width: 700px;
+}
+
+#project-image2{
+    width: 300px;
+}
+
+.text-container{
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid blue;
+    border-radius: 30px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #flex-container2{
+
+        display :flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 30px;
+    }
+
+    .text-container{
+        padding: 20px;
+        margin: 30px;
+        border: 1px solid blue;
+        border-radius: 30px;
+    }
+  
+
+}
