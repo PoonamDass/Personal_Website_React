@@ -1,7 +1,23 @@
 .App {
   text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
 }
 
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #fff;
+}
+
+[data-theme="dark"] .card-bg{
+  background: #121212;
+  color: white !important;
+  border: none !important;
+} 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -43,5 +59,4 @@ a {
 
 .main{
   margin-bottom: 1rem;
-  /* height: 100vh; */
 }

@@ -44,7 +44,12 @@
         margin: 30px;
         border: 1px solid blue;
         border-radius: 30px;
+    
     }
   
 
+}
+
+h1 {
+    margin-top: 5px;
 }

@@ -6,25 +6,25 @@ const ContactForm = () => {
 
      
       <div className="row row1">
-        <div className="col-sm-6">
+        <div className="col-md-6">
             <label> Name</label>
             <input type="text" name="name" class="form-control" />
         </div>
 
-        <div className="col-sm-6">
+        <div className="col-md-6">
             <label> Email</label>
           <input type="text" name="_replyto" class="form-control" />
           </div>
     
       </div>
 
-      <div className="col-md-12 text-area">
+      <div className="col-md-8 text-area">
        
          <label>Message</label>
           <textarea
             name="message"
             className="form-control md-textarea"
-            rows="3"
+            rows="10"
           ></textarea>
    
       </div>

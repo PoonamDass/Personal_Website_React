@@ -1,7 +1,8 @@
-import {useState, useEffect} from "react"
+import {useState} from "react"
 import "../Styles/Faq.css"
 const FaqSection = () => {
   const [reveal, setReveal] = useState(false)
+  const [mouseOver, setMouseOver] = useState(false)
 
   const handleClick = () => {
       setReveal(!reveal)
@@ -12,8 +13,8 @@ const FaqSection = () => {
       <h1>Frequently Asked Questions</h1>
       <div class="row d-flex justify-content-center">
         <div class="col-sm-8">
-          <div class="card">
-            <div class="card-body d-flex flex-column align-items-center">
+          <div class="card" >
+            <div class="card-body d-flex flex-column align-items-center card-bg">
               <h5 class="card-title">What is my favorite meme?</h5>
               <button onClick={handleClick} type="button" class="card-title btn btn-primary btn-small mb-3">
                 {reveal ?  "Close" : "Reveal"}
@@ -24,22 +25,26 @@ const FaqSection = () => {
         </div>
         <div class="col-sm-8">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body card-bg">
               <h5 class="card-title">
-                Would I rather fight ten chicken-sized horses or 1 horse sized
-                chicken?
+                Any special talents?
               </h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
+                <button onMouseEnter={() => setMouseOver(true)} type="button" class="card-title btn btn-primary btn-small mb-3">
+                  {mouseOver ?  "Revealed" : "Hover to Reveal"}
+                </button>
+                { mouseOver ?
+              <p class="card-text" >
+              I am an international super spy, just kidding. You can find me knitting baby yodas when I am not coding. I also like to write op-eds related to police accountability and immigrant rights. 
+              Here is a piece I wrote for my school's newspaper on <a href="http://www.roosevelthouse.hunter.cuny.edu/?forum-post=policing-new-york-city-subway" target="_blank"  rel="noreferrer">policing the NYC subways</a>
+              </p> : "" }
             </div>
           </div>
           <div class="col-sm-12">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body card-bg">
               <h5 class="card-title">What is my favorite quote?</h5>
-              <p class="card-text">People are like onions, they have layers - Shrek the Ogre</p>
+              <p class="card-text">Ogres (aka people) are like onions, they have layers - Shrek the Ogre</p>
+                <img src="https://media4.giphy.com/media/pyQV6sy5qOALu/giphy.gif" alt="Shrek gif" />
             </div>
           </div>
         </div>

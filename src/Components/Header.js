@@ -27,7 +27,7 @@ const Header = () => {
             <li className="middle">
                 <p className="text"> All artwork displayed is by Justseeds Artists' Cooperative, please click to view more 
                 of their radical artwork</p>
-                <div className="just-seeds-button"><a href="https://justseeds.org/" target="_blank"> View</a></div>
+                <div className="just-seeds-button"><a href="https://justseeds.org/" target="_blank" rel="noreferrer"> View</a></div>
             </li>
         </ul>
     )

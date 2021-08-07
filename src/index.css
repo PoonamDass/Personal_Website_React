@@ -17,8 +17,7 @@ code {
   margin:30%;
 }
 
-nav > ul {
-  margin-right:1%;
-  
-}
 
+#navBarMenu ul {
+  margin-right: 15px;
+}
