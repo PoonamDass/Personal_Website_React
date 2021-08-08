@@ -1,5 +1,4 @@
 .header-images {
-    /* list-style-type: none; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,9 +6,8 @@
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
-    /* padding-top: 0.5em;  */
-    /* padding:0%; */
-    margin: 0%; 
+    /* margin: 1%;  */
+    margin-top: 1%;
    }
 
    ul{
@@ -46,14 +44,6 @@
     padding: 16px 32px;
   }
 
-/* .child-container{
-  width:50%;
-  height: 50%;
-} */
-
-
-
-
 .Poonam-img{
   max-width: 60%;
   margin-right: 28%;
@@ -67,4 +57,63 @@
 .child-container-1{
   margin-left: 14%;
   text-align: start;
+  padding-bottom: 13%;
+  overflow: hidden;
+
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1055px) {
+  .homeSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .child-container-1{
+    margin:3%;
+  }
+
+  .child-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Poonam-img{
+  max-width: 40%;
+  height:auto;
+  margin-left: 28%;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+  .mobile img {
+    margin-top: 2%;
+    width: 30%;
+    height: auto;
+  }
+
+  .header-images{
+    display: none;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 760px) {
+  .mobile img{
+    width: 50%;
+    height: auto;
+  } 
+
+  .child-container-1{
+    margin: 4%;
+  }
+
 }

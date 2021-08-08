@@ -2,10 +2,15 @@ import {useState} from "react"
 import "../Styles/Faq.css"
 const FaqSection = () => {
   const [reveal, setReveal] = useState(false)
+  const [reveal2, setReveal2] = useState(false)
   const [mouseOver, setMouseOver] = useState(false)
 
   const handleClick = () => {
       setReveal(!reveal)
+  }
+
+  const handleClick2 = () => {
+    setReveal2(!reveal2)
   }
 
   return (
@@ -13,7 +18,7 @@ const FaqSection = () => {
       <h1>Frequently Asked Questions</h1>
       <div class="row d-flex justify-content-center">
         <div class="col-sm-8">
-          <div class="card" >
+          <div class="card " >
             <div class="card-body d-flex flex-column align-items-center card-bg">
               <h5 class="card-title">What is my favorite meme?</h5>
               <button onClick={handleClick} type="button" class="card-title btn btn-primary btn-small mb-3">
@@ -24,7 +29,7 @@ const FaqSection = () => {
           </div>
         </div>
         <div class="col-sm-8">
-          <div class="card">
+          <div class="card ">
             <div class="card-body card-bg">
               <h5 class="card-title">
                 Any special talents?
@@ -40,11 +45,20 @@ const FaqSection = () => {
             </div>
           </div>
           <div class="col-sm-12">
-          <div class="card">
+          <div class="card last-card">
             <div class="card-body card-bg">
               <h5 class="card-title">What is my favorite quote?</h5>
-              <p class="card-text">Ogres (aka people) are like onions, they have layers - Shrek the Ogre</p>
-                <img src="https://media4.giphy.com/media/pyQV6sy5qOALu/giphy.gif" alt="Shrek gif" />
+              <button onClick={handleClick2} type="button" class="card-title btn btn-primary btn-small mb-3">
+                {reveal2 ?  "Close" : "Reveal"}
+              </button>
+
+              {reveal2 ?
+              <div>
+                <p class="card-text">Ogres (aka people) are like onions, they have layers - Shrek the Ogre</p>
+                  <img src="https://media4.giphy.com/media/pyQV6sy5qOALu/giphy.gif" alt="Shrek gif" /> 
+              </div>
+                : "" }
+
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const ProjectInfo = () => {
                 <h2>Text Based Adventure</h2>
                 <p>JavaScript</p>
                 <p>Inspired by my favorite childhood show "The Twilight Zone", this command line based game prompts users to make fairly simple decisions, but there is a caveat to each choice. Enter the "Twilight Zone" via the link below to test your luck!</p>
-                <a class="project-links" href="https://github.com/PoonamDass/FSW-Text-Based-Adventure">Github Repo</a>
+                <a class="project-links" href="https://github.com/PoonamDass/FSW-Text-Based-Adventure"  target="_blank" rel="noreferrer">Github Repo</a>
             </div>
         
 
@@ -21,7 +21,7 @@ const ProjectInfo = () => {
                 <h2>Emoji Story Generator</h2>
                 <p>JavaScript, CSS, HTML</p>
                 <p>A user is able to generate random emojis and make meaning of them by writing a descriptive story. They are able to view past stories as well as the number of stories they've written.</p>
-                <a class="project-links" href="https://github.com/PoonamDass/fsw-mid-module-two-practice-assessment">Github Repo</a>
+                <a class="project-links" href="https://github.com/PoonamDass/fsw-mid-module-two-practice-assessment"  target="_blank" rel="noreferrer">Github Repo</a>
 
             </div>
 

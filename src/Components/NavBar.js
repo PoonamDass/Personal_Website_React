@@ -6,14 +6,26 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
       className="navbar navbar-expand-lg navbar-light bg-light"
       role="navigation"
     >
-      <span>
-        <a href="https://github.com/PoonamDass">
-          <i class="devicon-github-original colored nav-icon"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/poonam-dass/">
+      <span className="nav-icons">
+        <a
+          href="https://www.linkedin.com/in/poonam-dass/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i class="devicon-linkedin-plain colored nav-icon"></i>
         </a>
       </span>
+
+      <span className="nav-icons">
+        <a
+          href="https://github.com/PoonamDass"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="devicon-github-original colored nav-icon"></i>
+        </a>
+      </span>
+
       <button
         className="navbar-toggler"
         type="button"
